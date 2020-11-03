@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+   
+  </head>
+  <body>
+    <div class="global_container">
+      <h1 id="glob-title"> YOUR OWN LIBRARY</h1>
+      <div class="add_button">
+        <button type="button" onclick="openBookForm()">Add book</button>
+      </div>
+      <div class="form_popup" id="myForm">
+        <form id="myForm2" action="" class="form-container">
+          <h1>Add book</h1>
+          <label for="bookTitle"><b>Title</b></label>         
+          <input type="text" placeholder="Book title" name="bookTitle" id="inputTitle" required>
+         
+          <label for="bookAuthor"><b>Author</b></label>          
+          <input type="text" placeholder="Author" name="bookAuthor" id="inputAuthor"required>
+
+          <label for="bookPages"><b>Pages</b></label>
+          <input type="text" placeholder="Number of pages" name="bookPages" id="inputPages"required>
+
+          <label for=isRead><b>Have read</b></label>
+          <input type="checkbox" name="isRead" id="inputIsRead">
+
+          <button type="button" class="form-buttons" onclick="addBookToLibrary()">Add book</button>
+
+          <button type="button" class="form-buttons" onclick="cancelFrom()">Cancel</button>
+        </form>
+
+      </div>
+      <div id="library_container">
+        <div class="book" id="fake_book">
+          <p class="book_name">Some fake book name</p>
+          <p class="book_author">Guy Random</p>
+          <p class="book_pages">333</p>
+          <p class="is_read"> Read</p>
+        </div>
+        <div class="book" id="fake_book2">
+          <p class="book_name">Some super fake book name</p>
+          <p class="book_author">Guy Random</p>
+          <p class="book_pages">333</p>
+          <p class="is_read">Not Read</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script> 
+  </body>
+</html>

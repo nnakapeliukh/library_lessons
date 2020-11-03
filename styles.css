@@ -1,0 +1,39 @@
+#glob-title{
+    padding: 30px;
+}
+.book{
+    display: flex;
+    width: 50%;
+}
+.book p{
+    display: block;
+    padding: 20px;
+    margin: 1px;
+    background-color: #888;
+    width: 12.5%;
+    max-height: 5%;
+    text-align: center;  
+}
+.add_button{
+    padding-bottom: 30px;
+}
+.form_popup {
+
+    transition-duration: 0.5s;
+    display: none;
+    position: relative;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    padding:5px;
+}
+.form-container {
+    transition: 0.5s;
+    max-width: 250px;
+    max-height: 400px;
+    margin:auto;
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container label{
+    padding: 0px;
+  }
